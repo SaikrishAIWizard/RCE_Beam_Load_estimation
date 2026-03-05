@@ -133,6 +133,8 @@ Estimated Safe Load:
 Use format:
 length,width,depth,material
 
+Materials: concrete, steel, wood
+
 Example:
 5,300,450,concrete
 """
