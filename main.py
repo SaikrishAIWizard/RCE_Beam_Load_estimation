@@ -1,10 +1,15 @@
 from fastapi import FastAPI, Request
 import math
+import os
+from dotenv import load_dotenv
+
+# ---------------- ENV SETUP ----------------
+load_dotenv()
 
 app = FastAPI()
 
 # Telegram Bot Token
-BOT_TOKEN = "AAG-TJ4pkExgKRxKuCOP7X_TIpYaBqtQJa0"
+BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 
 # Telegram API URL
 TELEGRAM_API = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
